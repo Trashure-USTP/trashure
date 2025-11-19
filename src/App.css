@@ -797,3 +797,53 @@ code {
 .bg-green-600 { background-color: #16a34a; }
 .bg-purple-600 { background-color: #9333ea; }
 .bg-blue-600 { background-color: #2563eb; }
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.auth-divider:not(:empty)::before {
+  margin-right: .5em;
+}
+
+.auth-divider:not(:empty)::after {
+  margin-left: .5em;
+}
+
+.button-google {
+  width: 100%;
+  background-color: white;
+  color: #374151;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.button-google:hover {
+  background-color: #f9fafb;
+}
+
+.google-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
